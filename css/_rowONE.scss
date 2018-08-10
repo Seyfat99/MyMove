@@ -1,0 +1,52 @@
+.row {
+  height: 500px;
+  padding: 30px 42px 29px 30px;
+  margin: 0 135px;
+  box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+
+  .row__Inner-Right {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 42px 30px 49px;
+    height: 410px;
+
+    .row__Inner-Right--P1 {
+      font:  42px "RVMontserrat", sans-serif;
+      margin: 15px 0 25px;
+      a {
+        text-decoration: none;
+        color: #424242;
+      }
+    }
+    .row__Inner-Right--P2 {
+      margin: 0;
+      font: 18px/30px "Source Serif Pro";
+      color: rgba(0, 0, 0, 0.80);
+      width: 608px;
+    }
+
+    .cardFooter {
+      margin-top: auto;
+      display: flex;
+      width: 145px;
+
+      .cardFooter__Desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 15px;
+
+        .cardFooter__Desc-P1 {
+          font: lighter 12px "RVMontserrat, sans-serif";
+          color: #424242;
+          margin: 0 0 4px;
+        }
+        .cardFooter__Desc-P2 {
+          color: #757575;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

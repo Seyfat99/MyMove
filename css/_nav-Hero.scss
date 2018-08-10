@@ -1,0 +1,90 @@
+.topNav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 90px;
+  padding: 24px 20px;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    margin-left: auto;
+  }
+
+  li {
+    display: inline;
+    padding-right: 2rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font: lighter 12.8px "RVMontserrat", sans-serif;
+  }
+}
+
+.hero {
+  background-image: url(../img/heroImage.png);
+  height: 419px;
+
+  .hero__blue {
+    background: linear-gradient(
+      135deg,
+      rgba(63, 81, 181, 0.9),
+      rgba(40, 53, 147, 0.9)
+    );
+    height: 419px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: #fdd835;
+      margin-bottom: 30px;
+      font: lighter 1rem "RVMontserrat", sans-serif;
+    }
+    h2 {
+      color: white;
+      margin: 0;
+      font: bold 3rem "RVMontserrat", sans-serif;
+    }
+    p {
+      color: white;
+      margin-top: 30px;
+      font: lighter 1rem "Source Serif Pro";
+    }
+  }
+}
+.middleNavContainer {
+  margin: 42px 135px 40px 158px;
+  display: flex;
+
+  .middleNav {
+    height: 48px;
+    width: 100%;
+    display: flex;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .middleNavButton {
+      background-color: #536dfe;
+      color: white;
+      width: 150px;
+      height: 48px;
+      margin-left: 101px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #424242;
+      font: 13px "RVMontserrat", sans-serif;
+      letter-spacing: 0.75px;
+    }
+  }
+}
