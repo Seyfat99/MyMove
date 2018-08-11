@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyMove</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <nav class="topNav">
-            <img class="topNav__MoveLogo" src="img/horizontalLogo.svg" alt="MyMove logo">
+        <nav class="top-nav">
+            <img class="top-nav__move-logo" src="img/horizontalLogo.svg" alt="MyMove logo">
             <ul>
                 <li>
-                    <a class="uppercase" href="#">How It Works</a>
+                    <a class="uppercase" href="#">How It Works</a> <!-- add "h-" to classname to signify helper class -->
                 </li>
                 <li>
                     <a class="uppercase" href="#">Partner With Us</a>
@@ -37,44 +36,44 @@
 
     <main>
 
-        <div class="hero">
+        <div class="hero" aria-label="A smiling couple moved into a new house"> 
             <div class="hero__blue">
-                <h1 class="uppercase">Moving Resources</h1>
-                <h2>Master your move. We're here to help. </h2>
-                <p>A lot of research goes into planning a move. But don’t sweat it—our experts have done the heavy lifting</p>
+                <h1 class="hero__header hero__header--primary uppercase">Moving Resources</h1> <!-- add "h-" to classname to signify helper class -->
+                <h2 class="hero__header-two hero__header--secondary">Master your move. We're here to help. </h2>
+                <p class="hero__para hero__para--primary">A lot of research goes into planning a move. But don’t sweat it—our experts have done the heavy lifting</p>
             </div>
         </div>
 
-        <div class="middleNavContainer">
+        <div class="mid-nav-container">
 
-            <nav class="middleNav">
-                <ul>
+            <nav class="mid-nav-container__nav">
+                <ul class="mid-nav-container__unord-list">
                     <li>
-                        <a href="#">All</a>
+                        <a class="mid-nav-container__link" href="#">All</a>
                     </li>
                     <li>
-                        <a href="#">Utilities</a>
+                        <a class="mid-nav-container__link" href="#">Utilities</a>
                     </li>
                     <li>
-                        <a href="#">Guides</a>
+                        <a class="mid-nav-container__link" href="#">Guides</a>
                     </li>
                     <li>
-                        <a href="#">Buying/Selling</a>
+                        <a class="mid-nav-container__link" href="#">Buying/Selling</a>
                     </li>
                     <li>
-                        <a href="#">Moving</a>
+                        <a class="mid-nav-container__link" href="#">Moving</a>
                     </li>
                     <li>
-                        <a href="#">Design</a>
+                        <a class="mid-nav-container__link" href="#">Design</a>
                     </li>
                     <li>
-                        <a href="#">Organization</a>
+                        <a class="mid-nav-container__link" href="#">Organization</a>
                     </li>
                     <li>
-                        <a href="#">Outdoor</a>
+                        <a class="mid-nav-container__link" href="#">Outdoor</a>
                     </li>
                     <li>
-                        <button class="middleNavButton">Contact Us</button>
+                        <button class="middle-nav-container__button">Contact Us</button>
                     </li>
                 </ul>
             </nav>
@@ -110,7 +109,7 @@
         <div class="rowTwo">
 
             <article class="rowTwo__column">
-                <div class="rowTwo__column-top">
+                <div class="rowTwo__top-column">
                     <div class="rowTwo__ImgContainer">
                         <img src="img/pets.jpg" alt="Image of Pets Import Laws">
                     </div>
@@ -125,10 +124,17 @@
 
 
                 <div class="columnFooter">
+                    <!-- 
+                    
+                    Class name suggestions:
+                    1) no tag names
+                    2) no style attributes (optional)
+                    3) no numbers (e.g 3, "three" is ok)
 
+                    -->
                     <img src="img/rowFooterLogo.svg" alt="MyMove Circle Logo">
                     <div class="columnFooter__Desc">
-                        <p class="columnFooter__Desc-P1 p--font">By MyMove</p>
+                        <p class="columnFooter__desc columnFooter__desc--">By MyMove</p>
                         <p class="columnFooter__Desc-P2 p--font">August 25 2017</p>
                     </div>
 
@@ -192,7 +198,7 @@
                         <img src="img/phone.jpg" alt="Image of Pets Import Laws">
                     </div>
 
-                    <button class="button longButton">BUYING/SELLING</button>
+                    <button class="button button--full-width">BUYING/SELLING</button>
 
                     <p class="cardHeading">Moving a Smart-Enabled Home: What Technology Should Stay Behind? </p>
                 </div>
@@ -234,7 +240,7 @@
 
             </article>
 
-            <article class="rowTwo__column">
+            <article class="rowTwo__column">  <!-- change to row-two__column, if you want -->
 
                 <div class="rowTwo__column-top">
 
@@ -259,6 +265,10 @@
                 </div>
 
             </article>
+
+            <a href="#">
+                <i aria-hidden>blah</i>
+            </a>
 
             <div class="loadButtonContainer">
                 <hr>
