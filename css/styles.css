@@ -801,206 +801,214 @@ body {
   width: 142px;
 }
 
-.uppercase {
+.h-uppercase {
   text-transform: uppercase;
 }
 
-.dropMain {
+.drop-main {
   padding-top: 90px;
 }
 
-.topNavSecond {
+.top-nav__second-page {
   background: linear-gradient(135deg, #3f51b5, #283593);
 }
 
-.headWrapper {
+.head-wrapper {
   margin: 60px 236px 50px;
 }
-.headWrapper__list {
+.head-wrapper__unord-list {
   display: flex;
   list-style: none;
   margin: 0 102px;
   padding: 0;
 }
-.headWrapper__list li {
+.head-wrapper__list-item {
   font: bold 12px "RVMontserrat", sans-serif;
   margin-right: 10px;
 }
-.headWrapper__list li span {
-  padding-left: 10px;
-}
-.headWrapper__list li a {
+.head-wrapper__list-item .head-wrapper__list-link {
   text-decoration: none;
   color: #303f9f;
   font: bold 12px "RVMontserrat", sans-serif;
 }
-.headWrapper__section {
+.head-wrapper__list-item span {
+  padding-left: 10px;
+}
+.head-wrapper__section {
   margin: 0 102px;
 }
-.headWrapper__section-h1 {
+.head-wrapper__section .head-wrapper__heading-one {
   font: bold 42px "RVMontserrat", sans-serif;
   margin: 18px 0 20px;
   color: #424242;
 }
-.headWrapper__section-footer {
+.head-wrapper__section .head-wrapper__section-footer {
   display: flex;
   align-items: center;
 }
-.headWrapper__section-footer-desc {
+.head-wrapper__section .head-wrapper__section-footer .head-wrapper__name-date {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
 }
-.headWrapper__section-footer-desc .topP {
+.head-wrapper__section .head-wrapper__section-footer .head-wrapper__name-date .head-wrapper__para-name {
+  color: #424242;
   margin: 0;
-  font: 12px "RVMontserrat", sans-serif;
+  padding: 5px 0 0;
+  height: 24px;
+  font: bold 12px/24px "RVMontserrat", sans-serif;
+  letter-spacing: 0.86px;
 }
-.headWrapper__section-footer-desc .bottomP {
+.head-wrapper__section .head-wrapper__section-footer .head-wrapper__name-date .head-wrapper__para-date {
+  color: #757575;
   margin: 0;
-  font: 12px "Georgia", sans-serif;
+  padding: 0 0 5px;
+  font: 12px/24px "RVMontserrat", sans-serif;
+  letter-spacing: 0.86px;
+  height: 24px;
 }
-.headWrapper .headWrapper__img {
+.head-wrapper .head-wrapper__huge-image {
   margin: 50px 0 0 0;
 }
 
-.TOCWrapper {
+.table-content-wrapper {
   margin: 50px 236px 0px;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 3px solid #eeeeee;
   padding-bottom: 50px;
 }
-.TOCWrapper__h2 {
+.table-content-wrapper__heading-two {
   width: 100%;
   margin: 0 0 30px 0;
   font: bold 30px "RVMontserrat", sans-serif;
   color: #424242;
 }
-.TOCWrapper__column {
+.table-content-wrapper__column {
   margin-right: 4rem;
 }
-.TOCWrapper__list {
+.table-content-wrapper__unord-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.TOCWrapper__list li {
+.table-content-wrapper__list-item {
   font: 1rem/24px "Source Serif Pro", sans-serif;
   color: #3949ab;
   padding-bottom: 1rem;
 }
 
-.firstArticleHeader {
+.first-section-header {
   margin: 50px 335px 75px;
 }
-.firstArticleHeader h2 {
+.first-section-header__heading-two {
   font: bold 30px "RVMontserrat", sans-serif;
   color: #424242;
   margin-bottom: 30px;
 }
-.firstArticleHeader p {
+.first-section-header__para-one {
   font: 21px/33px "Source Serif Pro", sans-serif;
   width: 670px;
 }
 
-.tableWrapper {
+.table-wrapper {
   margin: 0 335px 50px;
 }
-.tableWrapper h2 {
+.table-wrapper__heading-two {
   font: bold 30px "RVMontserrat", sans-serif;
   color: #424242;
   margin-bottom: 30px;
 }
-.tableWrapper table {
+.table-wrapper__table {
   width: 670px;
 }
-.tableWrapper table tr {
+.table-wrapper__table-row {
   border: 1px solid black;
 }
-.tableWrapper table th {
+.table-wrapper__table-head {
   height: 50px;
   background-color: #f5f5f5;
 }
-.tableWrapper table td {
+.table-wrapper__table-data {
   border: 1px solid black;
   text-align: center;
   height: 50px;
   font-size: 1rem;
 }
 
-.lastArticleHeader {
+.second-section-header {
   margin: 0 335px 30px;
 }
-.lastArticleHeader h2 {
+.second-section-header__heading-two {
   font: bold 30px "RVMontserrat", sans-serif;
   color: #424242;
 }
-.lastArticleHeader h3 {
+.second-section-header__heading-three {
   font: lighter 21px "RVMontserrat", sans-serif;
   margin: 0 0 30px;
 }
-.lastArticleHeader p {
+.second-section-header__para-one {
   font: 21px/33px "Source Serif Pro", sans-serif;
   width: 670px;
   margin: 0;
 }
-.lastArticleHeader figure {
+.second-section-header__figure {
   margin: 60px 0 60px;
   width: 670px;
 }
-.lastArticleHeader figure img {
+.second-section-header__boxes-image {
   margin-bottom: 9.33px;
 }
-.lastArticleHeader figure figcaption {
+.second-section-header__caption {
   font: 12px tahoma, sans-serif;
   text-align: center;
 }
 
-.lastArticleHeader__Bottom .firstP,
-.lastArticleHeader__Bottom .thirdP,
-.lastArticleHeader__Bottom .fourthP {
+.second-section-header__para-two {
+  margin-bottom: 40px;
   font: 21px/33px "Source Serif Pro", sans-serif;
 }
-.lastArticleHeader__Bottom .firstP {
-  margin-bottom: 40px;
-}
-.lastArticleHeader__Bottom .blueText {
+.second-section-header__blue-text {
   color: #3949ab;
 }
-.lastArticleHeader__Bottom .secondP {
+.second-section-header__para-three {
   margin: 0 0 40px 20px;
   font: italic 28px/40px "Source Serif Pro", sans-serif;
   color: #757575;
 }
-.lastArticleHeader__Bottom .thirdP {
+.second-section-header__para-four {
+  margin-bottom: 30px;
+  font: 21px/33px "Source Serif Pro", sans-serif;
+}
+.second-section-header__unord-list {
   margin-bottom: 30px;
 }
-.lastArticleHeader__Bottom ul {
-  margin-bottom: 30px;
-}
-.lastArticleHeader__Bottom ul li {
+.second-section-header__unord-list .second-section-header__list-item {
   font: 21px/40px "Source Serif Pro", sans-serif;
 }
-
-.lastArticleHeader__Bottom-Quote {
+.second-section-header__para-five {
+  font: 21px/33px "Source Serif Pro", sans-serif;
+}
+.second-section-header__bottom-quote-wrapper {
   border-top: 3px solid #eeeeee;
   padding-top: 30px;
   width: 669px;
-  margin-top: 60px;
+  margin: 60px 0;
 }
-.lastArticleHeader__Bottom-Quote span {
+.second-section-header__bottom-quote-wrapper span {
   font: bold italic 18px/30px Georgia, sans-serif;
   color: #3949ab;
 }
-.lastArticleHeader__Bottom-Quote p {
+.second-section-header__bottom-quote-wrapper .second-section-header__para-six {
   font: lighter italic 18px/30px "RVMontserrat", sans-serif;
 }
 
-.rowTwo h3 {
+.row-two__heading-four-title {
   width: 100%;
   padding-bottom: 30px;
   margin: 0;
-  font: bold 24px/32px "RVMontserrat", sans-serif;
+  font: bolder 24px/32px "RVMontserrat", sans-serif;
+  color: #424242;
 }
 
 /*# sourceMappingURL=styles.css.map */
