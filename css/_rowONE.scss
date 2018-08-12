@@ -5,44 +5,46 @@
   box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.15);
   display: flex;
 
-  .row__Inner-Right {
+  .row__inner-right-div {
     display: flex;
     flex-direction: column;
     margin: 30px 42px 30px 49px;
     height: 410px;
 
-    .row__Inner-Right--P1 {
-      font:  42px "RVMontserrat", sans-serif;
+    .row__heading-two {
       margin: 15px 0 25px;
-      a {
-        text-decoration: none;
-        color: #424242;
+      .row_link {
+        &--primary {
+          font: 42px/50px "RVMontserrat", sans-serif;
+          text-decoration: none;
+          color: #424242;
+        }
       }
     }
-    .row__Inner-Right--P2 {
+    .row__para {
       margin: 0;
       font: 18px/30px "Source Serif Pro";
-      color: rgba(0, 0, 0, 0.80);
+      color: rgba(0, 0, 0, 0.8);
       width: 608px;
     }
 
-    .cardFooter {
+    .row__card-footer {
       margin-top: auto;
       display: flex;
       width: 145px;
 
-      .cardFooter__Desc {
+      &-desc {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-left: 15px;
 
-        .cardFooter__Desc-P1 {
+        .row__card-footer-para-one {
           font: lighter 12px "RVMontserrat, sans-serif";
           color: #424242;
           margin: 0 0 4px;
         }
-        .cardFooter__Desc-P2 {
+        .row__card-footer-para-two {
           color: #757575;
           margin: 0;
         }

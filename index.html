@@ -15,16 +15,17 @@
             <img class="top-nav__move-logo" src="img/horizontalLogo.svg" alt="MyMove logo">
             <ul>
                 <li>
-                    <a class="uppercase" href="#">How It Works</a> <!-- add "h-" to classname to signify helper class -->
+                    <a class="uppercase" href="#">How It Works</a>
+                    <!-- add "h-" to classname to signify helper class -->
                 </li>
                 <li>
                     <a class="uppercase" href="#">Partner With Us</a>
                 </li>
                 <li>
-                    <a  class="uppercase"href="#">About Us</a>
+                    <a class="uppercase" href="#">About Us</a>
                 </li>
                 <li>
-                    <a  class="uppercase"href="#">Moving Resources</a>
+                    <a class="uppercase" href="#">Moving Resources</a>
                 </li>
                 <li>
                     <a class="uppercase" href="#">Support</a>
@@ -36,9 +37,10 @@
 
     <main>
 
-        <div class="hero" aria-label="A smiling couple moved into a new house"> 
+        <div class="hero" aria-label="A smiling couple moved into a new house">
             <div class="hero__blue">
-                <h1 class="hero__header hero__header--primary uppercase">Moving Resources</h1> <!-- add "h-" to classname to signify helper class -->
+                <h1 class="hero__header hero__header--primary uppercase">Moving Resources</h1>
+                <!-- add "h-" to classname to signify helper class -->
                 <h2 class="hero__header-two hero__header--secondary">Master your move. We're here to help. </h2>
                 <p class="hero__para hero__para--primary">A lot of research goes into planning a move. But don’t sweat it—our experts have done the heavy lifting</p>
             </div>
@@ -83,23 +85,25 @@
 
         <div class="row">
 
-            <div class="row__Inner">
+            <div>
                 <img src="img/rowOneImage.jpg" alt="Image of two people deciding to move">
             </div>
 
-            <div class="row__Inner-Right">
+            <div class="row__inner-right-div">
                 <button class="button">MOVING</button>
-                <h2 class="row__Inner-Right--P1"><a href="index2.html">Deciding Whether or Not to Hire Movers</a></h2>
-                <p class="row__Inner-Right--P2">Moving to a new state, city, or even just across town to a new neighborhood may seem overwhelming. Though
+                <h2 class="row__heading-two">
+                    <a class="row_link row_link--primary" href="index2.html">Deciding Whether or Not to Hire Movers</a>
+                </h2>
+                <p class="row__para">Moving to a new state, city, or even just across town to a new neighborhood may seem overwhelming. Though
                     it may be a hassle, it’s an indisputable part of life – especially for young people in the years immediately
                     post-graduation…
                 </p>
 
-                <div class="cardFooter">
+                <div class="row__card-footer">
                     <img src="img/rowFooterLogo.svg" alt="MyMove Circle Logo">
-                    <div class="cardFooter__Desc">
-                        <p class="cardFooter__Desc-P1 p--font uppercase">By MyMove</p>
-                        <p class="cardFooter__Desc-P2 p--font">August 28 2017</p>
+                    <div class="row__card-footer-desc">
+                        <p class="row__card-footer-para-one p--font uppercase">By MyMove</p>
+                        <p class="row__card-footer-para-two p--font">August 28 2017</p>
                     </div>
                 </div>
             </div>
@@ -166,7 +170,7 @@
             </article>
 
             <article class="rowTwo__column">
-                
+
                 <div class="rowTwo__column-top">
 
                     <div class="rowTwo__ImgContainer">
@@ -240,7 +244,8 @@
 
             </article>
 
-            <article class="rowTwo__column">  <!-- change to row-two__column, if you want -->
+            <article class="rowTwo__column">
+                <!-- change to row-two__column, if you want -->
 
                 <div class="rowTwo__column-top">
 
@@ -277,7 +282,7 @@
             </div>
 
     </main>
-    
+
     <footer class="footer">
         <div class="footer__inner">
             <nav class="footer__inner-nav">
@@ -338,7 +343,7 @@
         };
 
         var nav = document.querySelector('.topNav');
-    
+
         var sticky = nav.offsetTop;
         function myFunction() {
             if (window.pageYOffset > sticky) {
