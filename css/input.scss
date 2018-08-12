@@ -7,6 +7,9 @@
 CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS
 *************************************************************************************************************************************************************/
 
+// add new line after each class 
+
+
 * {
   box-sizing: border-box;
 }
@@ -25,16 +28,12 @@ body {
   padding: 2px 15px;
   width: 92px;
   margin-bottom: 15px;
-}
-.longButton {
-  width: 142px;
+  &--full-width {
+    width: 142px;
+  }
 }
 
-.p--font {
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -105,6 +104,7 @@ body {
   }
 }
 
+// dont nest more than 3 levels
 .TOCWrapper {
   margin: 50px 236px 0px;
   display: flex;
@@ -121,15 +121,16 @@ body {
 
   &__column {
     margin-right: 4rem;
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      li {
-        font: 1rem/24px "Source Serif Pro", sans-serif;
-        color: #3949ab;
-        padding-bottom: 1rem;
-      }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      font: 1rem/24px "Source Serif Pro", sans-serif;
+      color: #3949ab;
+      padding-bottom: 1rem;
     }
   }
 }
@@ -172,14 +173,30 @@ body {
     }
   }
 }
+
+// .heading {
+//   &__one {
+//     font: bold 50px "RVMontserrat", sans-serif;
+//   }
+
+//   &__two {
+//     font: bold 30px "RVMontserrat", sans-serif;
+//     color: #424242;
+//   }
+
+//   &__two--mb5 {
+//     margin-bottom: 5px;
+//   }
+// }
+
 .lastArticleHeader {
   margin: 0 335px 30px;
 
   h2 {
     font: bold 30px "RVMontserrat", sans-serif;
     color: #424242;
-    margin-bottom: 5px;
   }
+
   h3 {
     font: lighter 21px "RVMontserrat", sans-serif;
     margin: 0 0 30px;

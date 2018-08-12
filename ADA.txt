@@ -1,0 +1,11 @@
+accesibility
+---
+
+images need alt tags
+divs with background images need "aria-label" that describes the image
+anchor links that don't have any text (like icons) need "aria-label"
+anchor links with icons or divs for design only should have "aria-hidden"
+svgs, even if used via "<img>" should have a "<title>" and "<desc>" that describes the svg
+form inputs should have an associate label with a "for" attribute that is equal to "id" and "name" attribute of the input
+figure elements need captions
+if you an anchor that doesn't take you anywhere else but instead reveals some content on the page then add "role=button"

@@ -31,22 +31,28 @@
     .row__card-footer {
       margin-top: auto;
       display: flex;
-      width: 145px;
 
-      &-desc {
+      &-name-date {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-left: 15px;
 
-        .row__card-footer-para-one {
-          font: lighter 12px "RVMontserrat, sans-serif";
+        .row__card-footer-para-name {
           color: #424242;
-          margin: 0 0 4px;
+          margin: 0;
+          padding: 5px 0 0;
+          height: 24px;
+          font: bold 12px/24px "RVMontserrat", sans-serif;
+          letter-spacing: 0.86px;
         }
-        .row__card-footer-para-two {
+        .row__card-footer-para-date {
           color: #757575;
           margin: 0;
+          padding: 0 0 5px;
+          font:  12px/24px "RVMontserrat", sans-serif;
+          letter-spacing: 0.86px;
+          height: 24px;
         }
       }
     }
