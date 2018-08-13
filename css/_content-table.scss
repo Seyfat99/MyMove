@@ -1,0 +1,57 @@
+.table-content-wrapper {
+  margin: 50px 236px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 3px solid rgba(238, 238, 238, 100%);
+  padding-bottom: 50px;
+
+  &__heading-two {
+    width: 100%;
+    margin: 0 0 30px 0;
+    font: bold 30px "RVMontserrat", sans-serif;
+    color: #424242;
+  }
+
+  &__column {
+    margin-right: 4rem;
+  }
+
+  &__unord-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__list-item {
+    font: 1rem/24px "Source Serif Pro", sans-serif;
+    color: #3949ab;
+    padding-bottom: 1rem;
+  }
+}
+
+
+.table-wrapper {
+  margin: 0 335px 50px;
+
+  &__heading-two {
+    font: bold 30px "RVMontserrat", sans-serif;
+    color: #424242;
+    margin-bottom: 30px;
+  }
+
+  &__table {
+    width: 670px;
+    &-row {
+      border: 1px solid black;
+    }
+    &-head {
+      height: 50px;
+      background-color: #f5f5f5;
+    }
+    &-data {
+      border: 1px solid black;
+      text-align: center;
+      height: 50px;
+      font-size: 1rem;
+    }
+  }
+}

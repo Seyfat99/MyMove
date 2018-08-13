@@ -1,0 +1,64 @@
+.head-wrapper {
+    margin: 60px 236px 50px;
+  
+    &__unord-list {
+      display: flex;
+      list-style: none;
+      margin: 0 102px;
+      padding: 0;
+    }
+    &__list-item {
+      font: bold 12px "RVMontserrat", sans-serif;
+      margin-right: 10px;
+  
+      .head-wrapper__list-link {
+        text-decoration: none;
+        color: #303f9f;
+        font: bold 12px "RVMontserrat", sans-serif;
+      }
+  
+      span {
+        padding-left: 10px;
+      }
+    }
+  
+    &__section {
+      margin: 0 102px;
+  
+      .head-wrapper__heading-one {
+        font: bold 42px "RVMontserrat", sans-serif;
+        margin: 18px 0 20px;
+        color: #424242;
+      }
+      .head-wrapper__section-footer {
+        display: flex;
+        align-items: center;
+  
+        .head-wrapper__name-date {
+          display: flex;
+          flex-direction: column;
+          margin-left: 15px;
+  
+          .head-wrapper__para-name {
+            color: #424242;
+            margin: 0;
+            padding: 5px 0 0;
+            height: 24px;
+            font: bold 12px/24px "RVMontserrat", sans-serif;
+            letter-spacing: 0.86px;
+          }
+          .head-wrapper__para-date {
+            color: #757575;
+            margin: 0;
+            padding: 0 0 5px;
+            font: 12px/24px "RVMontserrat", sans-serif;
+            letter-spacing: 0.86px;
+            height: 24px;
+          }
+        }
+      }
+    }
+    .head-wrapper__huge-image {
+      margin: 50px 0 0 0;
+    }
+  }
