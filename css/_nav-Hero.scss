@@ -8,16 +8,16 @@
   padding: 24px 20px;
   width: 100%;
 
-  ul {
+  &__unord-list {
     list-style: none;
     margin-left: auto;
   }
 
-  li {
+  &__list-item {
     display: inline;
     padding-right: 2rem;
   }
-  a {
+  &__list-link {
     text-decoration: none;
     color: white;
     font: lighter 12.8px "RVMontserrat", sans-serif;
@@ -40,28 +40,21 @@
     justify-content: center;
     align-items: center;
 
-    .hero__header {
-      margin-bottom: 30px;
-
-      &--primary {
-        color: #fdd835;
-        font: lighter 1rem "RVMontserrat", sans-serif;
-      }
-      &--secondary {
-        color: white;
-        font: bold 3rem "RVMontserrat", sans-serif;
-      }
+    .hero__heading-one {
+      margin-bottom: 24px;
+      color: #fdd835;
+      font: lighter 1rem "RVMontserrat", sans-serif;
     }
-    .hero__header-two {
+    .hero__heading-two {
+      color: white;
+      font: bold 3rem "RVMontserrat", sans-serif;
       margin: 0;
     }
-    .hero__para {
-      margin-top: 30px;
 
-      &--primary {
-        color: white;
-        font: lighter 1rem "Source Serif Pro";
-      }
+    .hero__para-one {
+      margin-top: 33px;
+      color: white;
+      font: lighter 1rem "Source Serif Pro";
     }
   }
 }
@@ -69,7 +62,7 @@
   margin: 42px 135px 40px 158px;
   display: flex;
 
-  .mid-nav-container__nav {
+  &__nav {
     height: 48px;
     width: 100%;
     display: flex;

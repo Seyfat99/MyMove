@@ -13,15 +13,13 @@
 
     .row__heading-two {
       margin: 15px 0 25px;
-      .row_link {
-        &--primary {
-          font: 42px/50px "RVMontserrat", sans-serif;
-          text-decoration: none;
-          color: #424242;
-        }
+      .row__heading-two-link {
+        font: 42px/50px "RVMontserrat", sans-serif;
+        text-decoration: none;
+        color: #424242;
       }
     }
-    .row__para {
+    .row__heading-two-description {
       margin: 0;
       font: 18px/30px "Source Serif Pro";
       color: rgba(0, 0, 0, 0.8);
@@ -50,7 +48,7 @@
           color: #757575;
           margin: 0;
           padding: 0 0 5px;
-          font:  12px/24px "RVMontserrat", sans-serif;
+          font: 12px/24px "RVMontserrat", sans-serif;
           letter-spacing: 0.86px;
           height: 24px;
         }
