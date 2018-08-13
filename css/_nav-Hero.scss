@@ -21,6 +21,11 @@
     text-decoration: none;
     color: white;
     font: lighter 12.8px "RVMontserrat", sans-serif;
+    &:hover {
+      border-bottom: 2px solid white;
+      padding-bottom: 5px;
+      transition: ease-out 100ms;
+    }
   }
 }
 
