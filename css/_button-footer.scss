@@ -1,3 +1,5 @@
+//  LOAD MORE ARTICLES BUTTON 
+
 .row-two__load-button-container {
   margin: 76px 0px 94px 0px;
   width: 100%;
@@ -28,15 +30,21 @@
 
   &__inner {
     display: flex;
-
+    // LEFT NAVIGATION IN FOOTER
     &-nav {
       margin-right: auto;
-
+      ul {
+        @include opacityLinks();
+      }
+      
       .footer__list-link {
         text-decoration: none;
         color: white;
         font: 16px/33px "RVMontserrat", sans-serif;
         letter-spacing: 1.31px;
+        display: inline-block;
+
+        @include slidingUnderline(); //UNDERLINE EFFECT ON NAV LINKS
       }
     }
   }
@@ -53,7 +61,7 @@
       padding-bottom: 16px;
     }
   }
-
+// PRIVACY , TERMS AND CONDITION LINKS
   &__privacy {
     height: 24px;
     margin-top: 25px;
@@ -63,6 +71,7 @@
       list-style: none;
       justify-content: center;
       margin: 0;
+      @include opacityLinks(); // CHANGES OPACITY OF LINKS ON HOVER
 
       .footer__privacy-list-item {
         padding: 0 1rem;
@@ -73,6 +82,8 @@
           color: white;
           font: lighter 14px/24px "RVMontserrat", sans-serif;
           letter-spacing: 1px;
+
+          @include slidingUnderline();
         }
       }
       .footer__privacy-list-item--border {

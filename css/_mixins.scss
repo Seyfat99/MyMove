@@ -1,0 +1,22 @@
+@mixin slidingUnderline() {
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width ease 0.3s;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+@mixin opacityLinks() {
+  &:hover a {
+    opacity: 0.5;
+  }
+  &:hover a:hover {
+    opacity: 1;
+  }
+}

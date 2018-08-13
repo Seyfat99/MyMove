@@ -1,3 +1,4 @@
+// HUGE CARD UNDERNEATH MIDDLE NAV
 .row {
   height: 500px;
   padding: 30px 42px 29px 30px;
@@ -14,7 +15,7 @@
     .row__heading-two {
       margin: 15px 0 25px;
       .row__heading-two-link {
-        font: 42px/50px "RVMontserrat", sans-serif;
+        font: bold 42px/50px "RVMontserrat", sans-serif;
         text-decoration: none;
         color: #424242;
       }
@@ -29,6 +30,8 @@
     .row__card-footer {
       margin-top: auto;
       display: flex;
+      border-top: 1px solid rgba(238, 238, 238, 100%);
+      padding: 20px 0 0 0;
 
       &-name-date {
         display: flex;

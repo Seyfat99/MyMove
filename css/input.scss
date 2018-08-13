@@ -1,3 +1,4 @@
+@import "mixins";
 @import "normalize";
 @import "nav-Hero";
 @import "rowONE.scss";
@@ -6,15 +7,15 @@
 @import "head-wrapper";
 @import "content-table";
 @import "section-headers";
+
 /************************************************************************************************************************************************************
 CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS
 *************************************************************************************************************************************************************/
 
-// add new line after each class
-
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   background-color: white;
@@ -27,11 +28,15 @@ body {
   border-radius: 12.5px;
   font: 12px Helvetica, sans-serif;
   color: #3949ab;
-  padding: 2px 15px;
+  padding: 5px 20px;
   width: 92px;
   margin-bottom: 15px;
   &--full-width {
     width: 142px;
+  }
+  &:hover {
+    background: #3949ab;
+    color: white;
   }
 }
 

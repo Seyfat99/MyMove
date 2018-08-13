@@ -1,3 +1,4 @@
+// SECTION HEADER THAT SAYS " This is section header"
 .first-section-header {
   margin: 50px 335px 75px;
   &__heading-two {
@@ -10,6 +11,7 @@
     width: 670px;
   }
 }
+// SECTION HEADER THAT SAYS " This is section header and This is a section subheader"
 
 .second-section-header {
   margin: 0 335px 30px;
@@ -41,6 +43,7 @@
     text-align: center;
   }
 }
+// SEPARATED SECOND SECTION HEADER  --- TO DEEP
 .second-section-header {
   //.second-section-header__bottom-div {
 

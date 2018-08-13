@@ -12,7 +12,7 @@
 
     <header>
         <nav class="top-nav">
-            <img class="top-nav__move-logo" src="img/horizontalLogo.svg" alt="MyMove logo">
+            <a href="index.html"><img class="top-nav__move-logo" src="img/horizontalLogo.svg" alt="MyMove logo"></a>
             <ul class="top-nav__unord-list">
                 <li class="top-nav__list-item">
                     <a class="top-nav__list-link h-uppercase" href="#">How It Works</a>
@@ -51,31 +51,31 @@
             <nav class="mid-nav-container__nav">
                 <ul class="mid-nav-container__unord-list">
                     <li>
-                        <a class="mid-nav-container__link" href="#">All</a>
+                        <a class="mid-nav-container__link h-uppercase mid-nav-container__link--active" href="#">All</a>
                     </li>
                     <li>
-                        <a class="mid-nav-container__link" href="#">Utilities</a>
+                        <a class="mid-nav-container__link h-uppercase" href="#">Utilities</a>
                     </li>
                     <li>
-                        <a class="mid-nav-container__link" href="#">Guides</a>
+                        <a class="mid-nav-container__link h-uppercase" href="#">Guides</a>
                     </li>
                     <li>
-                        <a class="mid-nav-container__link" href="#">Buying/Selling</a>
+                        <a class="mid-nav-container__link h-uppercase" href="#">Buying/Selling</a>
                     </li>
                     <li>
-                        <a class="mid-nav-container__link" href="#">Moving</a>
+                        <a class="mid-nav-container__link h-uppercase" href="#">Moving</a>
                     </li>
                     <li>
-                        <a class="mid-nav-container__link" href="#">Design</a>
+                        <a class="mid-nav-container__link h-uppercase" href="#">Design</a>
                     </li>
                     <li>
-                        <a class="mid-nav-container__link" href="#">Organization</a>
+                        <a class="mid-nav-container__link h-uppercase" href="#">Organization</a>
                     </li>
                     <li>
-                        <a class="mid-nav-container__link" href="#">Outdoor</a>
+                        <a class="mid-nav-container__link h-uppercase" href="#">Outdoor</a>
                     </li>
                     <li>
-                        <button class="middle-nav-container__button">Contact Us</button>
+                        <button class="middle-nav-container__button h-uppercase">Contact Us</button>
                     </li>
                 </ul>
             </nav>
@@ -325,24 +325,7 @@
 
     </footer>
 
-    <script>
-
-        window.onscroll = function () {
-            myFunction();
-        };
-
-        var nav = document.querySelector('.top-nav');
-
-        var sticky = nav.offsetTop;
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                nav.classList.add("stickyNav");
-            } else {
-                nav.classList.remove("stickyNav");
-            }
-        }
-
-    </script>
+<script src="scripts.js"></script>
 
 </body>
 

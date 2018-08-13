@@ -1,3 +1,4 @@
+// TOP NAVIGATION
 .top-nav {
   position: fixed;
   display: flex;
@@ -9,30 +10,29 @@
   width: 100%;
 
   &__unord-list {
+    display: flex;
     list-style: none;
     margin-left: auto;
+    @include opacityLinks(); // CHANGES OPACITY OF LINKS ON HOVER
+
   }
 
   &__list-item {
     display: inline;
-    padding-right: 2rem;
+    margin-right: 2rem;
   }
   &__list-link {
     text-decoration: none;
     color: white;
     font: lighter 12.8px "RVMontserrat", sans-serif;
-    &:hover {
-      border-bottom: 2px solid white;
-      padding-bottom: 5px;
-      transition: ease-out 100ms;
-    }
+    @include slidingUnderline(); // SLIDING UNDERLINE ON LINKS
   }
 }
-
+// HERO WITH COUPLE AS BACKGROUND IMAGE
 .hero {
   background-image: url(../img/heroImage.png);
   height: 419px;
-
+// BLUE BACKGROUND FOR HERO
   .hero__blue {
     background: linear-gradient(
       135deg,
@@ -63,6 +63,7 @@
     }
   }
 }
+// NAVIGATION BETWEEN HERO AND FIRST ROW
 .mid-nav-container {
   margin: 42px 135px 40px 158px;
   display: flex;
@@ -84,6 +85,8 @@
       width: 150px;
       height: 48px;
       margin-left: 101px;
+      font: 14px/14px "RVMontserrat", sans-serif;
+      letter-spacing: 0.24px;
     }
 
     .mid-nav-container__link {
@@ -91,6 +94,17 @@
       color: #424242;
       font: 13px "RVMontserrat", sans-serif;
       letter-spacing: 0.75px;
+
+      &:hover {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #303f9f;
+        transition: ease 150ms;
+      }
+
+      &--active {
+        border-bottom: 2px solid #303f9f;
+        padding-bottom: 5px;
+      }
     }
   }
 }
