@@ -520,6 +520,11 @@ table {
   color: white;
   font: lighter 12.8px "RVMontserrat", sans-serif;
 }
+.top-nav__list-link:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  transition: ease-out 100ms;
+}
 
 .hero {
   background-image: url(../img/heroImage.png);
@@ -766,47 +771,6 @@ table {
   border: none;
 }
 
-/************************************************************************************************************************************************************
-CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS
-*************************************************************************************************************************************************************/
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: white;
-}
-
-.stickyNav {
-  background: linear-gradient(135deg, #3f51b5, #283593);
-}
-
-.button {
-  border: 1px solid #3949ab;
-  border-radius: 12.5px;
-  font: 12px Helvetica, sans-serif;
-  color: #3949ab;
-  padding: 2px 15px;
-  width: 92px;
-  margin-bottom: 15px;
-}
-.button--full-width {
-  width: 142px;
-}
-
-.h-uppercase {
-  text-transform: uppercase;
-}
-
-.drop-main {
-  padding-top: 90px;
-}
-
-.top-nav__second-page {
-  background: linear-gradient(135deg, #3f51b5, #283593);
-}
-
 .head-wrapper {
   margin: 60px 236px 50px;
 }
@@ -892,19 +856,6 @@ body {
   padding-bottom: 1rem;
 }
 
-.first-section-header {
-  margin: 50px 335px 75px;
-}
-.first-section-header__heading-two {
-  font: bold 30px "RVMontserrat", sans-serif;
-  color: #424242;
-  margin-bottom: 30px;
-}
-.first-section-header__para-one {
-  font: 21px/33px "Source Serif Pro", sans-serif;
-  width: 670px;
-}
-
 .table-wrapper {
   margin: 0 335px 50px;
 }
@@ -928,6 +879,19 @@ body {
   text-align: center;
   height: 50px;
   font-size: 1rem;
+}
+
+.first-section-header {
+  margin: 50px 335px 75px;
+}
+.first-section-header__heading-two {
+  font: bold 30px "RVMontserrat", sans-serif;
+  color: #424242;
+  margin-bottom: 30px;
+}
+.first-section-header__para-one {
+  font: 21px/33px "Source Serif Pro", sans-serif;
+  width: 670px;
 }
 
 .second-section-header {
@@ -995,6 +959,47 @@ body {
 }
 .second-section-header__bottom-quote-wrapper .second-section-header__para-six {
   font: lighter italic 18px/30px "RVMontserrat", sans-serif;
+}
+
+/************************************************************************************************************************************************************
+CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS
+*************************************************************************************************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.stickyNav {
+  background: linear-gradient(135deg, #3f51b5, #283593);
+}
+
+.button {
+  border: 1px solid #3949ab;
+  border-radius: 12.5px;
+  font: 12px Helvetica, sans-serif;
+  color: #3949ab;
+  padding: 2px 15px;
+  width: 92px;
+  margin-bottom: 15px;
+}
+.button--full-width {
+  width: 142px;
+}
+
+.h-uppercase {
+  text-transform: uppercase;
+}
+
+.drop-main {
+  padding-top: 90px;
+}
+
+.top-nav__second-page {
+  background: linear-gradient(135deg, #3f51b5, #283593);
 }
 
 .row-two__heading-four-title {
