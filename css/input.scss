@@ -8,9 +8,6 @@
 @import "content-table";
 @import "section-headers";
 
-/************************************************************************************************************************************************************
-CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS
-*************************************************************************************************************************************************************/
 
 * {
   box-sizing: border-box;
@@ -20,7 +17,7 @@ body {
   margin: 0;
   background-color: white;
 }
-.stickyNav {
+.nav-background {
   background: linear-gradient(135deg, #3f51b5, #283593);
 }
 .button {
