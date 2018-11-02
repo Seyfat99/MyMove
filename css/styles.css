@@ -544,7 +544,7 @@ table {
   background-image: url(../img/heroImage.png);
   height: 419px;
 }
-.hero .hero__blue {
+.hero__blue-overlay {
   background: linear-gradient(135deg, rgba(63, 81, 181, 0.9), rgba(40, 53, 147, 0.9));
   height: 419px;
   display: flex;
@@ -552,17 +552,17 @@ table {
   justify-content: center;
   align-items: center;
 }
-.hero .hero__blue .hero__heading-one {
+.hero__blue-overlay .hero__heading-one {
   margin-bottom: 24px;
   color: #fdd835;
   font: lighter 1rem "RVMontserrat", sans-serif;
 }
-.hero .hero__blue .hero__heading-two {
+.hero__blue-overlay .hero__heading-two {
   color: white;
   font: bold 3rem "RVMontserrat", sans-serif;
   margin: 0;
 }
-.hero .hero__blue .hero__para-one {
+.hero__blue-overlay .hero__para-one {
   margin-top: 33px;
   color: white;
   font: lighter 1rem "Source Serif Pro";
@@ -621,33 +621,33 @@ table {
   margin: 30px 42px 30px 49px;
   height: 410px;
 }
-.row .row__inner-right-div .row__heading-two {
+.row .row__heading-two {
   margin: 15px 0 25px;
 }
-.row .row__inner-right-div .row__heading-two .row__heading-two-link {
+.row .row__heading-two .row__heading-two-link {
   font: bold 42px/50px "RVMontserrat", sans-serif;
   text-decoration: none;
   color: #424242;
 }
-.row .row__inner-right-div .row__heading-two-description {
+.row .row__heading-two .row__heading-two-description {
   margin: 0;
   font: 18px/30px "Source Serif Pro";
   color: rgba(0, 0, 0, 0.8);
   width: 608px;
 }
-.row .row__inner-right-div .row__card-footer {
+.row .row__heading-two .row__card-footer {
   margin-top: auto;
   display: flex;
   border-top: 1px solid #eeeeee;
   padding: 20px 0 0 0;
 }
-.row .row__inner-right-div .row__card-footer-name-date {
+.row .row__heading-two .row__card-footer-name-date {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 15px;
 }
-.row .row__inner-right-div .row__card-footer-name-date .row__card-footer-para-name {
+.row .row__heading-two .row__card-footer-name-date .row__card-footer-para-name {
   color: #424242;
   margin: 0;
   padding: 5px 0 0;
@@ -655,7 +655,7 @@ table {
   font: bold 12px/24px "RVMontserrat", sans-serif;
   letter-spacing: 0.86px;
 }
-.row .row__inner-right-div .row__card-footer-name-date .row__card-footer-para-date {
+.row .row__heading-two .row__card-footer-name-date .row__card-footer-para-date {
   color: #757575;
   margin: 0;
   padding: 0 0 5px;
@@ -688,7 +688,7 @@ table {
 .row-two__img-container {
   padding-bottom: 30px;
 }
-.row-two__heading-three {
+.row-two__heading-two {
   font: 26px "RVMontserrat", sans-serif;
   color: #424242;
   margin: 0px 0 10px 0;
@@ -756,6 +756,7 @@ table {
 }
 .footer__inner {
   display: flex;
+  height: 260px;
 }
 .footer__inner-nav {
   margin-right: auto;
@@ -792,13 +793,11 @@ table {
 .footer__social-icons {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  list-style: none;
 }
 .footer__social-icons img {
   padding-bottom: 16px;
-}
-.footer__privacy {
-  height: 24px;
-  margin-top: 25px;
 }
 .footer__privacy .footer__unord-list {
   display: flex;
@@ -1027,9 +1026,6 @@ table {
   font: lighter italic 18px/30px "RVMontserrat", sans-serif;
 }
 
-/************************************************************************************************************************************************************
-CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS     CUSTOM CSS BEGINS
-*************************************************************************************************************************************************************/
 * {
   box-sizing: border-box;
 }

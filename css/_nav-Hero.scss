@@ -34,7 +34,7 @@
   background-image: url(../img/heroImage.png);
   height: 419px;
 // BLUE BACKGROUND FOR HERO
-  .hero__blue {
+  &__blue-overlay {
     background: linear-gradient(
       135deg,
       rgba(63, 81, 181, 0.9),
